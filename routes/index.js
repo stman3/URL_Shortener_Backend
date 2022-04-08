@@ -3,8 +3,7 @@ const router = express.Router();
 
 const Url = require('../models/Url')
 
-//route 
-//GET The longUrl from the ShortUrl
+
 
 router.get('/:code',async(req,res)=>{
     try{
