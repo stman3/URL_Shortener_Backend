@@ -1,11 +1,12 @@
 const express = require('express')
 const connectDB = require('./config/db')
-
-
-
+const morgan = require('morgan')
 const app = express();
-app.use(express.json({extented: false}))
 
+
+
+app.use(express.json({extented: false}))
+app.use(morgan('tiny'))
 
 connectDB()
 
